@@ -4,8 +4,8 @@ module.exports = {
   url: 'https://flink-lab.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'flink-lab', // Usually your GitHub org/user name.
-  projectName: 'flink-lab.github.io', // Usually your repo name.
+  organizationName: 'flink-lab',
+  projectName: 'flink-lab.github.io',
   themeConfig: {
     navbar: {
       title: 'Flink Lab',
@@ -22,7 +22,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/flink-lab',
           label: 'GitHub',
           position: 'right',
         },
@@ -35,12 +35,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Blog',
+              to: 'blog',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Stream Switch',
+              to: 'docs/',
             },
           ],
         },
@@ -48,34 +48,35 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Slack',
+              href: 'https://flink-lab.slack.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/flink-lab',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Links',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Flink',
+              href: 'https://flink.apache.org',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Apache Flink Community China',
+              href: 'https://community.alibabacloud.com/users/5782759541479310?spm=a2c65.11461447.0.0.41204a012XdZla',
             },
+            {
+              label: 'Docusaurus',
+              href: 'https://v2.docusaurus.io/',
+            },
+
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Flink Lab. Built with v2.docusaurus.io`,
     },
   },
   presets: [
@@ -84,17 +85,17 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'doc-stream-switch',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/flink-lab/home-page/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/flink-lab/home-page/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

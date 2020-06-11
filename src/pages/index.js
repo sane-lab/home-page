@@ -72,7 +72,16 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Project Docs
+            </Link>
+
+            <Link
+              className={classnames(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('blog/')}>
+              Selected Blogs
             </Link>
           </div>
         </div>
